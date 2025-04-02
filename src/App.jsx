@@ -7,22 +7,38 @@ const Container = styled.div`
   color: #ffffff;
   padding: 2rem 1rem;
   font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
 `;
 
 const Content = styled.div`
-  max-width: 700px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    padding: 2rem 3rem;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 2rem;
   color: #facc15;
   margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const SubTitle = styled.p`
   font-size: 1.1rem;
   margin-bottom: 2rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
 `;
 
 const SectionTitle = styled.h2`
@@ -30,6 +46,10 @@ const SectionTitle = styled.h2`
   margin-top: 2rem;
   margin-bottom: 1rem;
   color: #38bdf8;
+
+  @media (min-width: 768px) {
+    font-size: 1.75rem;
+  }
 `;
 
 const List = styled.ul`
@@ -56,12 +76,20 @@ const Button = styled.a`
   border-radius: 8px;
   text-align: center;
   font-size: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+  }
 `;
 
 const FooterNote = styled.p`
   margin-top: 2rem;
   font-size: 0.85rem;
   color: #94a3b8;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const AffiliateLandingPage = () => {
@@ -72,7 +100,7 @@ const AffiliateLandingPage = () => {
         <SubTitle>Comissão de 40%. Sem precisar aparecer. Use nossos materiais prontos e receba comissão direto na conta.</SubTitle>
 
         <SectionTitle>💰 Curso custa R$697 - Você ganha R$278,80 por venda</SectionTitle>
-        <p>O <strong>Código de Partida</strong> ensina programação do zero para quem quer migrar de carreira e trabalhar com tecnologia. São mais de 200 aulas com suporte, comunidade e um passo a passo completo.</p>
+        <p>O <strong>Código de Partida</strong> ensina programação do zero para quem quer migrar de carreira e trabalhar com tecnologia. São mais de 100 aulas com suporte, comunidade e um passo a passo completo.</p>
 
         <SectionTitle>🚀 Vantagens para você</SectionTitle>
         <List>
@@ -87,8 +115,7 @@ const AffiliateLandingPage = () => {
 
         <SectionTitle>🎯 Quer começar agora?</SectionTitle>
         <p>Clique no botão abaixo, faça o cadastro como afiliado e aguarde aprovação:</p>
-        <Button href="https://dashboard.kiwify.com.br/join/affiliate/oo2eJIE5" target="_blank" rel="noopener noreferrer">
-          Quero ser um afiliado
+        <Button href="https://dashboard.kiwify.com.br/join/affiliate/oo2eJIE5" target="_blank" rel="noopener noreferrer">          Quero ser um afiliado
         </Button>
 
         <FooterNote>*Dúvidas? Me chama no Instagram: @seuperfil</FooterNote>
